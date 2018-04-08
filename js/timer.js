@@ -33,11 +33,11 @@ Timer.prototype.resetTimer = function () {
 }
 
 Timer.prototype.tickerAction = function () {
-    this.totalTime--;
     this.changeTimerText(this.formatSeconds(this.totalTime));
-    if (this.totalTime === 0) {
+    if (this.totalTime == 0) {
         clearInterval(this.ticker);
     }
+    this.totalTime--;
 }
 
 Timer.prototype.formatSeconds = function (seconds) {
