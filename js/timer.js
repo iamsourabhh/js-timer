@@ -29,6 +29,7 @@ Timer.prototype.stopTimer = function () {
 }
 
 Timer.prototype.resetTimer = function () {
+    this.stopTimer();
     this.changeTimerText('Timer Reseted');
 }
 

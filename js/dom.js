@@ -38,7 +38,6 @@ function onResetClick() {
         showWarningMessage('First start the time, you asshole!!')
         return;
     }
-    timer.stopTimer()
     timer.resetTimer();
 
 }
